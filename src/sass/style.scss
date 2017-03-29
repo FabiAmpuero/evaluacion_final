@@ -89,8 +89,11 @@ html, body {
 }
 .btn-group, .bootstrap-select, .show-tick {
     width: 100% !important;
+}
+.btn-default, .btn {
     @include borde;
     border-color: $main-color !important;
+    border-radius: 0;
 }
 
 

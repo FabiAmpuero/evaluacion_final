@@ -68,9 +68,12 @@ html, body {
     outline: 2px outset #ffc56e !important; }
 
 .btn-group, .bootstrap-select, .show-tick {
-  width: 100% !important;
-  border-color: #ffc56e !important; }
-  .btn-group:focus, .bootstrap-select:focus, .show-tick:focus {
+  width: 100% !important; }
+
+.btn-default, .btn {
+  border-color: #ffc56e !important;
+  border-radius: 0; }
+  .btn-default:focus, .btn:focus {
     border-color: #ffc56e !important;
     outline: 2px outset #ffc56e !important; }
 
