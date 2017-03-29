@@ -60,14 +60,18 @@ gulp.task('sweetalert2js', function(){
     return gulp.src('./node_modules/sweetalert2/dist/sweetalert2.min.js').pipe(gulp.dest('./src/js'));
 });
 
+gulp.task('pace', function(){
+    return gulp.src('./node_modules/pace/pace.js').pipe(gulp.dest('./src/js'));
+});
+
 gulp.task('mainjs', function(){
     return gulp.src('./src/js/main.js').pipe(concat('main.js')).pipe(gulp.dest('./dist/js'));
 });
-/*
+
 gulp.task('stylecss', function(){
     return gulp.src('./src/css/style.css').pipe(gulp.dest('./dist/css'));
 });
-*/
 
-gulp.task('default', ['images', 'style', 'script', 'jquery', 'sweetalertcss', 'sweetalertjs', 'fonts', 'selectcss', 'selectjs', 'sweetalert2css', 'sweetalert2js']);
+
+gulp.task('default', ['images', 'style', 'script', 'jquery', 'sweetalertcss', 'sweetalertjs', 'fonts', 'selectcss', 'selectjs', 'sweetalert2css', 'sweetalert2js', 'pace']);
 

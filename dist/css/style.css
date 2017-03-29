@@ -1,0 +1,170 @@
+/* ---------------------------------------------------------------------------- MAPA -- */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#map {
+  height: 100%; }
+
+* {
+  /*outline: 1px solid rgba(255, 0, 0, 0.41);*/ }
+
+/* ------------------------------------------------------------------------ MENU NAV -- */
+#nav-sec {
+  background: #fff;
+  border: none; }
+  #nav-sec img {
+    width: 200px;
+    padding: 8px 0; }
+  #nav-sec a {
+    font-size: 30px;
+    float: right;
+    color: #ffc56e;
+    top: 12px; }
+    #nav-sec a:hover {
+      text-decoration: none; }
+  #nav-sec .tooltip-inner {
+    position: absolute;
+    top: 15px;
+    width: 500px;
+    right: -15px;
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 13px;
+    font-size: 13px; }
+  #nav-sec .test + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: none; }
+
+/* --------------------------------------------------------------------- SELECCIONAR -- */
+#home-sec .seleccionar {
+  position: absolute;
+  width: 30%;
+  top: 85px;
+  background: #fff;
+  padding: 0px 20px 20px 20px; }
+  #home-sec .seleccionar label {
+    padding-top: 15px; }
+#home-sec .buscar {
+  position: absolute;
+  width: 30%;
+  background: #ffc56e;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
+  top: 260px; }
+  #home-sec .buscar:focus {
+    border-color: #ffc56e !important;
+    outline: 2px outset #ffc56e !important; }
+#home-sec select {
+  border-color: #ffc56e;
+  width: 100%;
+  padding: 6px; }
+  #home-sec select:focus {
+    border-color: #ffc56e !important;
+    outline: 2px outset #ffc56e !important; }
+
+.btn-group, .bootstrap-select, .show-tick {
+  width: 100% !important;
+  border-color: #ffc56e !important; }
+  .btn-group:focus, .bootstrap-select:focus, .show-tick:focus {
+    border-color: #ffc56e !important;
+    outline: 2px outset #ffc56e !important; }
+
+/* ---------------------------------------------------------------------------- INFO -- */
+.tipo-letra {
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 0.5em;
+  font-weight: 100; }
+
+#info .row {
+  padding: 5px 14px; }
+  #info .row small {
+    display: block; }
+  #info .row .sel-let {
+    line-height: 12px;
+    padding-bottom: 15px; }
+  #info .row img {
+    width: 60%;
+    display: inline-block; }
+  #info .row h4 {
+    font-weight: bolder;
+    margin: 0; }
+  #info .row #pasajeros {
+    width: 100%;
+    border: 2px solid #ffc56e;
+    text-align: center; }
+    #info .row #pasajeros:focus {
+      border-color: #ffc56e !important;
+      outline: 2px outset #ffc56e !important; }
+  #info .row p {
+    display: inline-block; }
+  #info .row * {
+    padding-left: 8px;
+    padding-right: 8px; }
+  #info .row .col-xs-3 {
+    width: 29%; }
+  #info .row .col-xs-6 {
+    width: 41%; }
+#info .cant {
+  color: #ffc56e !important;
+  font-size: 16px; }
+#info .select-carro {
+  position: absolute;
+  width: 30%;
+  top: 309px;
+  background: #fff;
+  padding: 20px 15px 20px 20px;
+  padding-bottom: 10px; }
+#info .compartir {
+  position: absolute;
+  width: 30%;
+  background: #ffc56e;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
+  top: 607px; }
+  #info .compartir:focus {
+    border-color: #ffc56e !important;
+    outline: 2px outset #ffc56e !important; }
+
+/* ---------------------------------------------------------------------- ALERTAS -- */
+.sweet-alert, .sa-icon {
+  width: 300px !important; }
+
+.showSweetAlert {
+  width: 500px !important; }
+
+/* -------------------------------------------------------------------------- ALERTA FINAL -- */
+.costo-persona {
+  color: #ffc56e;
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Roboto"; }
+
+.costo-per {
+  margin-top: 0; }
+
+.swal2-confirm {
+  background-color: #ffc56e !important;
+  border-left-color: #ffc56e !important;
+  border-right-color: #ffc56e !important; }
+  .swal2-confirm:focus {
+    outline: none !important; }
+
+/* -------------------------------------------------------------------------- FOOTER -- */
+#footer {
+  position: absolute;
+  bottom: 0;
+  background: rgba(46, 46, 46, 0.56);
+  color: #fff;
+  width: 100%;
+  padding-left: 20px; }
+
+/*# sourceMappingURL=style.css.map */
