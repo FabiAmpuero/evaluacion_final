@@ -106,9 +106,9 @@ html, body {
   #info .row * {
     padding-left: 8px;
     padding-right: 8px; }
-  #info .row .col-md-3 {
+  #info .row .col-xs-3 {
     width: 29%; }
-  #info .row .col-md-6 {
+  #info .row .col-xs-6 {
     width: 41%; }
 #info .cant {
   color: #ffc56e !important;

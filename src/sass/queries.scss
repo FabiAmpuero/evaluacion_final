@@ -1,0 +1,124 @@
+@media screen and (max-width:1270px) {
+    .compartir {
+        top: 672px !important;
+    }
+}
+@media screen and (max-width:1150px) {
+    .seleccionar, .buscar, .select-carro, .compartir {
+        width: 37% !important;
+    }
+    #info .cant {
+        font-size: 14px !important;
+    }
+    #info .row img {
+        width: 70% !important;
+    }
+}
+@media screen and (max-width:1340px) {
+    h4 {
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width:910px) {
+    .seleccionar, .buscar, .select-carro, .compartir {
+        width: 38% !important;
+        left: 40px !important;
+    }
+}
+@media screen and (max-width:850px) {
+    .seleccionar, .buscar, .select-carro, .compartir {
+        width: 42% !important;
+    }
+    #info .row {
+        padding-right: 8px !important;
+    }
+}
+@media screen and (max-width:800px) {
+    .seleccionar, .buscar, .select-carro, .compartir {
+        width: 44% !important;
+        left: 30px !important;
+    } 
+}
+@media screen and (max-width:762px) {
+    #info .row * {
+        padding-left: 6px !important;
+        padding-right: 0px !important;
+    } 
+}
+@media screen and (max-width:600px) {
+    #info .row img {
+        padding-left: 0;
+    }
+    .seleccionar, .buscar, .select-carro, .compartir {
+        left: 15px !important;
+    }
+    .tipo-letra {
+        font-size: 15px !important;
+    }
+    .seleccionar {
+        padding: 0 10px 10px 10px !important;
+        label {
+            padding-top: 5px !important;
+        }
+    }
+    .buscar {
+        top: 220px !important;
+    }
+    .select-carro {
+        top: 264px !important;
+        padding: 0 !important;
+    }
+    .compartir {
+        top: 587px !important;
+    }
+    #info .col-xs-8 {
+        width: 51%;
+    }
+    #info .col-xs-4 {
+        width: 45%;
+    }
+    #info .row #pasajeros {
+        width: 76% !important;
+    }
+    #info .row .col-xs-3 {
+        width: 21% !important;
+    }
+    #info .row .col-xs-4 {
+        width: 46% !important;
+    }
+    #info .row img {
+        width: 66% !important;
+    }
+    h4 {
+        font-size: 12px !important;
+    } 
+}
+@media screen and (max-width:500px) {
+    #info .row img {
+        width: 100% !important;
+    }
+    .compartir {
+        top: 616px !important;
+    }
+}
+@media screen and (max-width:460px) {
+    .compartir {
+        top: 603px !important;
+    }
+}
+@media screen and (max-width:420px) {
+    .compartir {
+        top: 587px !important;
+    }
+}
+@media screen and (max-width:345px) {
+    .compartir {
+        top: 630px !important;
+    }
+}
+
+
+
+
+
+
