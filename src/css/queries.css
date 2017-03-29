@@ -88,8 +88,17 @@
 @media screen and (max-width: 420px) {
   .compartir {
     top: 587px !important; } }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 400px) {
   .compartir {
-    top: 630px !important; } }
+    top: 571px !important; }
+
+  .seleccionar {
+    top: 73px !important; }
+
+  .buscar {
+    top: 207px !important; }
+
+  .select-carro {
+    top: 249px !important; } }
 
 /*# sourceMappingURL=queries.css.map */
