@@ -134,7 +134,7 @@ html, body {
     border-color: #ffc56e !important;
     outline: 2px outset #ffc56e !important; }
 
-/* ---------------------------------------------------------------------- CALCULATOR -- */
+/* ---------------------------------------------------------------------- ALERTAS -- */
 .sweet-alert, .sa-icon {
   width: 300px !important; }
 
@@ -161,6 +161,10 @@ html, body {
 /* -------------------------------------------------------------------------- FOOTER -- */
 #footer {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  background: rgba(46, 46, 46, 0.56);
+  color: #fff;
+  width: 100%;
+  padding-left: 20px; }
 
 /*# sourceMappingURL=style.css.map */
