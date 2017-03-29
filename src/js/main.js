@@ -1,12 +1,11 @@
 function init() {
-    $('[data-toggle="tooltip"]').tooltip({
-        title:"carrocomp! La nueva forma de moverte en la ciudad. Con carrocomp! puedes compartir tu viaje con amigos y cobrar el costo equivalente.",
-        content: "<img src='../img/logo-peach.jpg' alt=''>",
-        animation: true}
-    );
+    // TOOLTIP
+    $('[data-toggle="tooltip"]').tooltip();
     
     $(".buscar").click(validarBusqueda);
 }
+
+
 
 function validarBusqueda() {
     var origen = $("#origen");
@@ -90,11 +89,11 @@ function validarPasajeros(_numPasajeros, _imgAuto, _tipoAuto) {
         sweetAlert("Por favor, ingrese un número entero");
     }
     else if ($("#pasajeros").val()>_numPasajeros){
-        sweetAlert("Número de pasajeros no permitido"+_numPasajeros)
+        sweetAlert("Número de pasajeros no permitido")
     }
     else{
         var monto = $(".money-"+_tipoAuto).text();
-        var costoIndividual = monto/_numPasajeros;
+        var costoIndividual = monto/$("#pasajeros").val();
         modalFunction(_imgAuto, costoIndividual);
     }
 }
@@ -119,6 +118,6 @@ function modalFunction(_URLimg, _costo) {
     swal(
     {
         html:
-        '<img src="src/img/logo-peach.jpg" alt="" class="logo-peach" width="200px"></br><h1>Costo por persona:</h1><img src="'+_URLimg+'" alt="" width="150px"><h1>'+_costo+'</h1>'
+        '<img src="src/img/logo-peach.jpg" alt="" class="logo-peach" width="200px"></br><img src="'+_URLimg+'" alt="" width="150px"><h1 class="costo-per">Costo por persona:</h1><h1 class="costo-persona">$'+Math.round(_costo)+' CLP</h1>'
     });
 }

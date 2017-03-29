@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Examen Herramientas Productividad</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:900" rel="stylesheet">
 	<!--REQUIRED STYLE SHEETS-->
 	<link rel="stylesheet" href="src/css/sweetalert.css">
 	<link rel="stylesheet" href="src/css/sweetalert2.css">
@@ -18,15 +19,16 @@
 <!-- ------------------------------------------------------------------ MENU -->
 	<div class="navbar navbar-inverse navbar-fixed-top" id="nav-sec">
 		<div class="container">
-		    <img src="src/img/logo-gris.jpg" alt="">
-		    <a data-toggle="tooltip" data-placement="bottom" class="glyphicon glyphicon-info-sign test"></a>
+		    <img src="src/img/logo-gris.jpg" alt="" >
+		    <a data-toggle="tooltip" data-placement="bottom" class="glyphicon glyphicon-info-sign test" data-html="true" title="<img style='width:150px;' src='src/img/logo-peach.jpg' width='50px;'/><br><i>La nueva forma de moverte en la ciudad.</i> Con <strong>carrocomp!</strong> puedes compartir tu viaje con amigos y cobrar el costo equivalente." class='test'></a>
 		</div>
-	</div><!--END NAV SECTION -->
+	</div>
+<!--END NAV SECTION -->
 	<div id="home-sec">   
-		<div class="container"  >
+		<div class="container">
             <div class="seleccionar">
                 <label for="origen" class="tipo-letra">ORIGEN</label>
-                <select name="origen" id="origen" onchange="calcRoute()" class="selectpicker show-tick">
+                <select name="origen" id="origen"  class="selectpicker show-tick">
                     <option value="">Seleccione</option>
                     <option value="arica">Arica</option>
                     <option value="Iquique, Chile">Iquique</option>
@@ -46,7 +48,7 @@
                 </select>
 
                 <label for="destino" class="tipo-letra">DESTINO</label>
-                <select name="destino" id="destino" onchange="calcRoute();" class="selectpicker show-tick">
+                <select name="destino" id="destino"  class="selectpicker show-tick">
                     <option value="">Seleccione</option>
                     <option value="arica">Arica</option>
                     <option value="Iquique, Chile">Iquique</option>
@@ -86,7 +88,7 @@
 		                <h4>Motocicleta</h4>
 		                <small>máximo 2 pasajeros</small>
 		            </div>
-		            <div class="col-md-3">
+		            <div class="col-md-3 cant">
 		                $<p class="money-moto">3680</p>
 		            </div>
 		        </div>
@@ -99,7 +101,7 @@
 		                <h4>Automóvil</h4>
 		                <small>máximo 5 pasajeros</small>
 		            </div>
-		            <div class="col-md-3">
+		            <div class="col-md-3 cant">
                         $<p class="money-auto"></p>
 		            </div>
 		        </div>
@@ -112,7 +114,7 @@
 		                <h4>Minivan</h4>
 		                <small>máximo 8 pasajeros</small>
 		            </div>
-		            <div class="col-md-3">
+		            <div class="col-md-3 cant">
 		                $<p class="money-minivan">9400</p>
 		            </div>
 		        </div>
@@ -125,15 +127,15 @@
 		                <h4>Camión</h4>
 		                <small>máximo 3 pasajeros</small>
 		            </div>
-		            <div class="col-md-3">
+		            <div class="col-md-3 cant">
 		                $<p class="money-camion">15040</p>
 		            </div>
 		        </div>
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <h4>Cantidad pasajeros:</h4>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <input type="text" id="pasajeros" onKeyPress="return SoloNumeros(event);">
                     </div>
                 </div>

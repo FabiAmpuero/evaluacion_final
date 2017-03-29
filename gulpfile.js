@@ -30,6 +30,7 @@ gulp.task('style', function() {
 
 gulp.task('images', function() {
 	// tarea images
+    
 });
 
 gulp.task('sweetalertcss', function(){
@@ -48,19 +49,25 @@ gulp.task('selectcss', function(){
 });
 
 gulp.task('selectjs', function(){
-	// tarea sweetalert js
     return gulp.src('./node_modules/bootstrap-select/dist/js/bootstrap-select.min.js').pipe(gulp.dest('./src/js'));
 });
 
 gulp.task('sweetalert2css', function(){
-	// tarea sweetalert css
     return gulp.src('./node_modules/sweetalert2/dist/sweetalert2.css').pipe(gulp.dest('./src/css'));
 });
 
 gulp.task('sweetalert2js', function(){
-	// tarea sweetalert js
     return gulp.src('./node_modules/sweetalert2/dist/sweetalert2.min.js').pipe(gulp.dest('./src/js'));
 });
+
+gulp.task('mainjs', function(){
+    return gulp.src('./src/js/main.js').pipe(concat('main.js')).pipe(gulp.dest('./dist/js'));
+});
+/*
+gulp.task('stylecss', function(){
+    return gulp.src('./src/css/style.css').pipe(gulp.dest('./dist/css'));
+});
+*/
 
 gulp.task('default', ['images', 'style', 'script', 'jquery', 'sweetalertcss', 'sweetalertjs', 'fonts', 'selectcss', 'selectjs', 'sweetalert2css', 'sweetalert2js']);
 
